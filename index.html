@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Machu Picchu Quiz</title>
+    <meta name="description" content="Machu Picchu Quiz App">
+
+    <!-- Normalize.css, a cross-browser reset file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Syncopate:700" rel="stylesheet">
+    <link href="float-grid.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <header role="banner">
+      <div class="row">
+        <div class="col-12">
+            <h1>Machu Picchu Quiz</h1>
+        </div>
+      </div>
+      <!-- CURRENT SCORE & COUNTER -->
+        <div class="row">
+          <div class="col-3">
+            <ul>
+              <li>Current Score: 
+                <span class="score-counter">0</span>
+              </li>
+              <li>Question
+                <span class="question-counter">0</span>
+                of 10
+              </li>
+            </ul>  
+          </div>
+        </div>
+    </header>  
+
+    <main role="main">
+
+      <!-- START 'PAGE', website renders this first -->
+      <div class="row start-form">
+        <div class="col-8 js-quiz-container">
+          <h2>Learn about one of the 7 Wonders of the World!</h2>
+          <form id="start-form" role="form">
+            <button type="submit" class="start-button">Begin!</button>
+          </form>
+        </div>
+      </div>    
+
+      <div class="row quiz-form">
+      </div>    
+   
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="database.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
